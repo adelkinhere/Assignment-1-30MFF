@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catching the Sun on NYUAD Campus</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href='https://fonts.googleapis.com/css2?family=Klee+One&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Oooh+Baby&display' rel='stylesheet'>
+</head>
+<body>
+    <div id="top"></div>
+    <header class="header">
+            <nav class="navbar">
+            <a href="#top" onclick="event.preventDefault(); window.scrollTo({ top: 0 });">Main</a>
+            <a href="#about">About</a>
+            <a href="#film">Film</a>
+            <a href="#explore">Explore</a>
+        </nav>
+        <h1>Catching the Sun<br>on NYUAD Campus</h1>
+    </header>    
+    <section id="about">
+        <h2>About</h2>
+        <div class="container">
+        <p>Stepping outside after hours in an air-conditioned room, the warmth of the sun feels like an instant recharge. Since moving to Abu Dhabi, I've realized how deeply my mood and energy depend on the weather. The sun gives me the energy I need every day.<br><br>Believing in the sun's positive effects on mental well-being, I decided to capture its presence on campus through film. This short video is meant to be meditative and calming, inviting viewers to pause, step away from their to-do lists, and simply observe—watching the light, the reflections, and the quiet beauty of the sun in the campus environment.</p>
+        <img src="img/collage.png" alt="collage" style="width: 45%; height: auto; margin-right: 60px; margin-top: -20px;">
+    </div>
+    </section>
+    
+    <section id="film">
+        <h2 style="text-align: center; margin-left: 0px;">30 MFF Film</h2>
+        <iframe width="1280" height="720" src="https://drive.google.com/file/d/1V5zWwaaqZMY2N6mAgahvK0ws9ukkH8Jw/preview"  allow="autoplay"></iframe>
+    </section>
+    
+    <section id="explore">
+        <h2>Explore</h2>
+        <p>Some of the footage of sun across different cities.</p>
+
+        <h2 style="text-align: right; font-size: 40px; margin-top: -150px; margin-right: 200px; color: #D5536D;">The Sun Day Playlist</h2>
+        <div class="explore-container">
+        <div class="slider-wrapper">
+            <div class="slider">
+                <img id="slide-1" src="img/pic1.jpg" alt="sun 1"/>;
+                <img id="slide-2" src="img/pic2.jpg" alt="sun 2"/>;
+                <img id="slide-3" src="img/pic3.png" alt="sun 3"/>;
+            </div>
+            <div class="slider-nav">
+                <a href="#slide-1"></a>
+                <a href="#slide-2"></a>
+                <a href="#slide-3"></a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- <div class="music-player"> -->
+        <!-- <h2 style="font-size: 30px;">The Sun Day Playlist</h2> -->
+        <div class="music-player">
+            <audio id="audioPlayer" controls>
+                <source src="audio/kissme.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+            <div class="playlist">
+                <button onclick="changeSong('audio/kissme.mp3')" style="font-family: 'DM Sans'; height: 3rem; font-size: 20px;">Song 1</button>
+                <button onclick="changeSong('audio/beatles.mp3')" style="font-family: 'DM Sans'; height: 3rem; font-size: 20px;">Song 2</button>
+                <button onclick="changeSong('audio/coldplay.mp3')" style="font-family: 'DM Sans'; height: 3rem; font-size: 20px;">Song 3</button>
+            </div>
+        </div>
+        
+        <script>
+            function changeSong(song) {
+                let audioPlayer = document.getElementById('audioPlayer');
+                audioPlayer.src = song;  // Change the source
+                audioPlayer.load();  // Reload the player
+                audioPlayer.play();  // Auto-play the new song
+            }
+        </script>
+    </div>
+<!-- </div> -->
+</body>
+</html>

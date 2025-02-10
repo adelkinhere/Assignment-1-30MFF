@@ -1,0 +1,194 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #ECE9E2;
+    font-family: 'DM Sans';
+}
+
+body h2{
+    margin-left: 50px;
+}
+
+body p{
+    margin-left: 50px;
+    width: 36%;
+    font-size: 20px;
+    color: #E43D11;
+    margin-bottom: 100px;
+}
+
+h2{
+    font-family: 'Oooh Baby';
+    font-size: 60px;
+    color: #E43D11;
+}
+
+section {
+    scroll-margin-top: 80px; /* Adjust based on your navbar height */
+}
+
+.break {
+    display: block;
+}
+
+.navbar {
+    font-family: 'Oooh Baby';
+    font-size: 30px;
+    display: flex;
+    justify-content: center; /* Centers the buttons horizontally */
+    gap: 70px; /* Adds spacing between buttons */
+    /* margin-top: 20px; /* Adjusts spacing below the title */
+    
+    position: fixed; /* Keeps navbar in place when scrolling */
+    top: 0; /* Sticks it to the top of the page */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* Makes it full width */
+    background-color: #E43D11; /* Background color to prevent transparency */
+    padding: 15px 0; /* Adds some spacing */
+    text-align: center; /* Centers the buttons */
+    z-index: 1000;
+}
+
+h1{
+    font-family: 'Oooh Baby';
+    font-size: 90px;
+    text-align: center;
+    color: #E43D11;
+    margin-top: 280px;
+    margin-bottom: 320px;
+    margin-left: 0px;
+}
+
+nav a{
+    text-decoration: none;
+    color: #ECE9E2;
+}
+
+nav a:hover {
+    color: #EFB11E;
+}
+
+iframe{
+    display: block;
+    margin: 0 auto;
+}
+
+.container {
+    display: flex;  /* Enable flexbox */
+    align-items: center;  /* Vertically align items */
+    justify-content: space-between;  /* Space between the items */
+  }
+
+  #about h2{
+    margin-bottom: -110px;
+  }
+  #about img{
+    margin-bottom: 90px;
+  }
+
+  #explore{
+    padding: 2rem;
+  }
+
+  .slider-wrapper{
+    position: relative;
+    max-width: 36rem;
+    margin-left: 50px;
+    margin-top: 0px;
+    flex: 2;
+  }
+
+  .slider {
+    display: flex;
+    aspect-ratio: 16/9;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla (0,0%,0%,0.25);
+    border-radius: 0.75rem;
+  }
+
+  .slider img{
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+  } 
+
+  .slider-nav {
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+
+  .slider-nav a{
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+  }
+  .slider-nav a:hover {
+    opacity: 1;
+  }
+  
+  /* #explore {
+    /* display: flex;
+    align-items: center; */
+    /* gap: 20px;
+} */ 
+
+.explore-container {
+    display: flex; /* Enables horizontal layout */
+    align-items: flex-start; /* Aligns items vertically */
+    gap: 2rem; /* Adds space between slideshow & player */
+    width: 100%; /* Ensures full width */
+}
+
+.music-player {
+    font-family: 'DM Sans';
+    display: flex;
+    flex-direction: column;
+    align-items: left; /* Aligns contents to the right */
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 8px;
+    background-color: #D5536D;
+    /* flex: 1; */
+    max-width: 30rem;
+    margin-left: auto; /* Pushes the music player to the right */
+    margin-top: -350px;
+    margin-right: 150px;
+}
+
+audio{
+    max-width: 30rem;
+}
+.playlist {
+
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.playlist button {
+    margin: 5px 0;
+    padding: 5px;
+    border: none;
+    background-color: #ECE9E2;
+    color: #D5536D;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.playlist button:hover {
+    background-color: #FFA2B5;
+}
+
