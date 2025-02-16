@@ -42,10 +42,10 @@ section {
     font-family: 'Oooh Baby';
     font-size: 30px;
     display: flex;
-    justify-content: center; /* centers the buttons horizontally */
-    gap: 70px; /* adds spacing between buttons */    
+    justify-content: center; 
+    gap: 70px;   
     position: fixed; 
-    top: 0; /* sticking navbar to the top of the page */
+    top: 0; 
     position: fixed;
     top: 0;
     left: 0;
@@ -88,13 +88,13 @@ nav a:hover {
 }
 
 #sun-container {
-  position: absolute; /* Changed from fixed to absolute */
+  position: absolute; 
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   pointer-events: none;
-  z-index: 1; /* Place behind content */
+  z-index: 1; 
 }
 
 #sun {
@@ -240,12 +240,8 @@ iframe{
   }
 
   .text {
-  /* max-width: 400px;
-    color: #E43D11;
-    text-align: left;
-    margin-left: -50px; */
-    text-align: left;  /* Ensures both are aligned the same way */
-    margin: 0 auto;    /* Centers them if needed */
+    text-align: left;  
+    margin: 0 auto; 
     width: fit-content;
   }
 
@@ -347,37 +343,30 @@ iframe{
   }
 
 footer {
-  background-color: #FFA2B5; /* Dark background */
+  background-color: #FFA2B5; 
   color: #E43D11;
   padding: 20px 0;
   text-align: center;
   margin-top: 50px;
   height: 300px;
   display: flex;
-  /* margin-bottom: -1600px; */
 }
 
 .footer-container {
   display: flex;
-  /* justify-content: space-between; */
-  /* align-items: center; */
   max-width: 1300px;
   margin: 0 auto;
-  /* padding: 20px; */
-
 }
 
 .footer-image img {
-  width: 250px; /* Adjust as needed */
+  width: 250px; 
   height: 250px;
   margin-top: 20px;
-  border-radius: 50%; /* Makes image round */
+  border-radius: 50%; 
 }
 
 
 .footer-description {
-  /* flex: 1; Allows the paragraph to grow */
-  /* max-width: 600px; */
   margin-top: 50px;
   width: 100%;
   text-align: left;
@@ -386,21 +375,17 @@ footer {
 .footer-social a img {
  margin-top: 100px;
  margin-left: -200px;
-  width: 50px; /* Adjust icon size */
+  width: 50px; 
   transition: 0.3s;
   padding: 5px;
   margin-right: 50px;
 }
 
 .footer-social a img:hover {
-  transform: scale(1.1); /* Hover effect */
+  transform: scale(1.1); 
 }
 
-
-
-/* General responsive styles */
 @media screen and (max-width: 768px) {
-    /* Header styles */
     .header {
         min-height: 70vh;
     }
@@ -411,7 +396,6 @@ footer {
         text-align: center;
     }
 
-    /* About section */
     #about .container {
         flex-direction: column;
         padding: 20px;
@@ -429,13 +413,11 @@ footer {
         margin: 0;
     }
 
-    /* Film section */
     #film iframe {
         width: 100%;
         height: 300px;
     }
 
-    /* Explore section */
     .text h1 {
         font-size: 3rem !important;
         margin-left: -90px;
@@ -473,7 +455,6 @@ footer {
         height: 8px;
     }
 
-    /* Music player */
     .music-player {
         width: 100%;
         margin: 10px auto;
