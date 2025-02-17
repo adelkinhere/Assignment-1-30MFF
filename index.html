@@ -9,9 +9,11 @@
     <link href='https://fonts.googleapis.com/css2?family=Klee+One&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Oooh+Baby&display' rel='stylesheet'>
 </head>
 <body>
+    <!-- top anchor for "Main" navigation link -->
     <div id="top"></div>
     <header class="header">
             <nav class="navbar">
+            <!-- custom scroll behavior for top link -->
             <a href="#top" onclick="event.preventDefault(); window.scrollTo({ top: 0 });">Main</a>
             <a href="#about">About</a>
             <a href="#film">Film</a>
@@ -39,8 +41,10 @@
         </div>
 
         <div class="explore-container">
+            <!-- image slider with navigation dots -->
             <div class="slider-wrapper">
                 <div class="slider">
+                 <!-- individual slide images with IDs for navigation -->
                 <img id="slide-1" src="img/pic1.jpg" alt="sun 1"/>;
                 <img id="slide-2" src="img/pic2.jpg" alt="sun 2"/>;
                 <img id="slide-3" src="img/pic3.png" alt="sun 3"/>;
@@ -56,6 +60,7 @@
                 <img id="slide-13" src="img/pic13.jpg" alt="sun 13"/>;
                 <img id="slide-14" src="img/pic14.jpg" alt="sun 14"/>;
             </div>
+            <!-- navigation dots that link to each slide by ID -->
                 <div class="slider-nav">
                 <a href="#slide-1"></a>
                 <a href="#slide-2"></a>

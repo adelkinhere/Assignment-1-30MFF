@@ -138,6 +138,7 @@ function initSunAnimation() {
         let growing = true;
         let coronaScale = 1;
 
+        //makes the sun elements grow in size and go backr
         setInterval(() => {
             if (growing) {
                 scale += 0.003;
